@@ -8,7 +8,7 @@ using static MapGod;
 
 public class MapGodWindow : EditorWindow
 {
-    [MenuItem("🩸Tundra/Map God")]
+    [MenuItem("Tools/Map God")]
     public static void ShowWindow()
     {
         EditorWindow.GetWindow(typeof(MapGodWindow), false, "Map God Inspector");
