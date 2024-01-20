@@ -18,4 +18,15 @@ Once you've made any changes to a room, including enemies, press *Validate All R
 
 All you need to do when setting up Checkpoints is drop the Checkpoint prefab in and set the `To Activate` field to the room that contains that checkpoint. *Validate Checkpoints* goes through each checkpoint and finds every room between the last checkpoint and itself to see what rooms and doors it needs to inherit.
 
+
+**Apostate Waves**
+If you have an unorthodox wave that doesn't want to follow these conventions, you can mark a wave as an Apostate by adding the *ApostateWave* component to a Wave. (A wave is the GameObject that has the ActivateNextWave script on it.)
+Once the *ApostateWave* component is added to the GameObject, you can configure what parts you want the Map God to automate.
+Right now you can configure if MapGod automates:
+- Calculating the enemy count
+- Figuring out what enemies to activate next
+- Filling in the doors that lock/unlock in this wave
+- Figuring out if this wave is the last wave
+
+
 Finally, *Toggle Wave Enemies* toggles the enemies in the current wave you have selected. 
