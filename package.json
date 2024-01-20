@@ -1,0 +1,13 @@
+{
+  "name": "com.maranara.mapgod",
+  "version": "1.0.0",
+  "displayName": "Map God",
+  "description": "Wave editor toolset for ULTRAKILL map cration",
+  "unity": "2019.4.40",
+  "unityRelease": "0b5",
+  "author": {
+    "name": "Maranara",
+    "email": "maranara0sauce@gmail.com",
+    "url": "https://www.ethan-mara.com"
+  }
+}
