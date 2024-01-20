@@ -36,7 +36,12 @@ public class MapGodWindow : EditorWindow
                 {
                     MapInfo info = FindObjectOfType<MapInfo>();
                     if (info == null)
+                    {
+                        StockMapInfo stock = FindObjectOfType<StockMapInfo>();
+                        if (stock != null)
+                            god = stock.gameObject.AddComponent<MapGod>();
                         return;
+                    }
                     god = info.gameObject.AddComponent<MapGod>();
                 }
                 return;
